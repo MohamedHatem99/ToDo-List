@@ -207,7 +207,7 @@ body {
     
 
 }
-@media(max-width:800px ){
+@media(max-width:342 ){
     .task-stats div {
          margin-bottom: 8px;   
     }
