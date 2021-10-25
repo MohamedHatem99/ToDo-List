@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+<body>
+    <div class="todo-container">
+        <div class="add-task">
+            <input type="text">
+            <span class="plus" id="addTask">+</span>
+        </div>
+        <div class="SelectItems">
+            <div class="SelectedBtn">
+                <button class="btn Active" data-name="All">All</button>
+                <button class="btn"  data-name="Completed">Completed</button>
+                <button class="btn" data-name="Not-Completed">Not Completed</button>
+            </div>
+            <div>
+                <button class="reset">Rest All</button>
+            </div>
+        </div>
+        <div class="task-Content">
+        </div>
+        <div class="task-stats">
+            <div class="tasks-count">
+                All Tasks <span>0</span>
+            </div>
+            <div class="tasks-completed">
+               Completed Tasks <span>0</span>
+            </div>
+            <div class="tasks-NotCompleted">
+                Not Completed <span>0</span>
+             </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.behance.net/MohamedHatem99" class="behance"><i class="fab fa-behance"></i></a>
+        <a href="https://github.com/MohamedHatem99/" class="github"><i class="fab fa-github "></i></a>
+        <a href="https://www.linkedin.com/in/mohamed-hatem-267ba6197/" class="linkiedin"><i class="fab fa-linkedin-in"></i></a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
