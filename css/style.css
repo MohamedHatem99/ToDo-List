@@ -13,7 +13,7 @@ body {
     background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #FFCC70);
     background-size: 650% 650%;
     animation: gradient 15s ease-in-out infinite;
-    padding: 20px;
+    padding: 10px;
 }
 
 @keyframes gradient {
@@ -50,7 +50,7 @@ body {
    text-decoration: none;
  }
 .todo-container {
-    width: 600px;
+    width: 45%;
     margin: 30px auto 0;
     background-color: #F6F6F6;
     background-color: #4158D0;
@@ -58,6 +58,11 @@ body {
     border-radius: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-bottom: 30px;
+}
+@media(max-width:800px ){
+    .todo-container {
+        width: 100%;
+    }
 }
 .todo-container .add-task {
     position: relative;
@@ -101,8 +106,12 @@ body {
 .SelectItems {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     padding-left: 15px;
     padding-right: 15px;
+}
+@media (max-width:300px) {
+    .SelectItems {display: block;}
 }
 .SelectItems > div button {
     margin-right: 8px;
@@ -117,6 +126,7 @@ body {
     color: #b4079d;
     /* box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1); */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
+    margin-bottom: 8px;
 }
 .SelectItems > div button.Active{
     background-color: #b4079d;
@@ -131,6 +141,7 @@ body {
     cursor: pointer;
     background-color: #ee7752;
     color: white;
+    min-width: 100px;
     /* box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1); */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     transition: all .3s ease;
@@ -139,7 +150,8 @@ body {
     background-color: #e66e49;
 }
 .todo-container .task-Content {
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
+
 }
 .todo-container .task-Content > span{
     color: #777;
@@ -181,10 +193,11 @@ body {
 .task-stats {   
     overflow: hidden;
     margin: 10px auto;
-    width: 600px;
+    width: 100%;
     font-size: 12px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     /* padding: 2px 20px; */
     /* background-color: #C850C0; */
     /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
@@ -193,6 +206,11 @@ body {
     margin: 0px auto;
     
 
+}
+@media(max-width:800px ){
+    .task-stats div {
+         margin-bottom: 8px;   
+    }
 }
 .task-stats .tasks-count span,
 .task-stats .tasks-completed span, 
